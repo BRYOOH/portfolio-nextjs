@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    body{
+       @apply font-primary bg-gray-950 text-white leading-loose; 
+    }
+    /*set the body height*/
+    html,body{height: 100%;};
+}
