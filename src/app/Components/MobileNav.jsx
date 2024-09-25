@@ -1,11 +1,15 @@
+"use client";
+
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 
 const links = [
   {
       name:"home",
-      path:"/home",
+      path:"/",
   },
   {
       name:"experience",
@@ -17,18 +21,40 @@ const links = [
   },
   {
       name:"projects",
- 
-      path:"/contact",
-  },];
+      path:"/projects",
+  },
+  {
+    name:"contact",
+    path:"/contact",
+},
+];
 
 const MobileNav = () => {
+
+const pathname= usePathname();
+
   return (
     <Sheet>
-      <SheetTrigger>
-       <Menu className="size-[30px] text-accent " />
+      <SheetTrigger className="flex justify-center items-center">
+       <Menu className="text-[30px] text-accent " />
       </SheetTrigger>
-      <SheetContent>
-        <div className="">logo</div>
+      <SheetContent className="flex flex-col">
+        <div className="mt-32 mb-40 text-center text-2xl">
+        <Link href="/">
+        <h1 className="text-4xl font-semibold">
+          Muchira <span className="text-accent">.</span>
+        </h1>
+        </Link>  
+        </div>
+        <nav className="flex flex-col justify-center items-center gap-8">
+          {links.map((link,index)=>{
+            return (<Link href={link.path} key={index} 
+            className={`${link.path===pathname && "text-accent border-b-2 border-accent "} 
+            text-xl capitalize hover:text-accent transition-all`}>
+              {link.name}
+            </Link>);
+          })}
+        </nav>
       </SheetContent>
     </Sheet>
   )
