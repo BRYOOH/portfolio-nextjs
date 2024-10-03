@@ -1,5 +1,5 @@
 "use client";
-import { delay, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import Image from "next/image"
 import pic from '@/app/assets/transparent profile.png'
 
@@ -8,7 +8,7 @@ const Profile = () => {
     <div className="h-full w-full relative ">
       <motion.div initial={{opacity:0}} 
       animate={{opacity:1,
-        transition:{
+        transition:{ 
           delay:2,
           duration:0.4, 
           ease:"easeIn"},}}>

@@ -2,7 +2,87 @@
 import regent from "@/app/assets/regent.jpeg";
 import ngcdf from "../assets/ngcdf.png";
 import sysre from "@/app/assets/sysre.png";
+import java from '../assets/java.jpeg'
+import web from '../assets/web.jpeg'
+import full from '../assets/fullstack.jpeg'
+import project from '../assets/project.jpeg'
+import git from '@/app/assets/git.png'
+import javas from '@/app/assets/java.jpeg'
+import nextjs from '@/app/assets/nextjs.png'
+import csharp from '@/app/assets/csharp.png'
+import javascript from '@/app/assets/javascript.png'
+import unity from '@/app/assets/unity.png'
+import typescript from '@/app/assets/typescript.png'
+import reactjs from '@/app/assets/reactjs.png'
+import mongodb from '@/app/assets/mongodb.png'
+import mysql from '@/app/assets/mysql.png'
+import tailwindcss from '@/app/assets/tailwind.png'
 
+export const technologies = [
+    {
+      name: "Java",
+      icon: javas,
+    },
+    {
+        name: "C#",
+        icon: csharp,
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+        name: "Unity",
+        icon: unity,
+    },
+    {
+      name: "TypeScript",
+      icon: typescript,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+        name: "TailwindCSS",
+        icon: tailwindcss,
+    },
+    {
+        name: "git",
+        icon: git,
+    },
+    {
+        name: "Next JS",
+        icon: nextjs,
+    },
+    {
+        name: "MongoDB",
+        icon: mongodb,
+    },
+    {
+        name: "MySQL",
+        icon: mysql,
+    }
+];
+
+export const cards = [
+    {
+        title:"Java Developer",
+        icon: java,
+    },
+    {
+        title:"Web Developer",
+        icon: web,
+    },
+    {
+        title:"Fullstack Developer",
+        icon: full,
+    },
+    {
+        title:"Project Management",
+        icon: project,
+    },
+];
 
 export const works = [
     {

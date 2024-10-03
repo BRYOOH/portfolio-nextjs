@@ -26,7 +26,7 @@ const ExperienceCard =({work},index)=>(
   <VerticalTimelineElement
     visible
     contentStyle={{background:"#026314", color :"#fff"}}
-    contentArrowStyle={{borderRight:"7px solid #232631"}}
+    contentArrowStyle={{borderRight:"7px solid #217524"}}
     date={work.dates}
     iconStyle={{background: work.iconBg}}
     icon= {
