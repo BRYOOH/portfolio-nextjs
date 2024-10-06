@@ -1,5 +1,6 @@
 'use client';
 import { motion } from "framer-motion";
+import EarthCanvas from "../Components/EarthCanvas";
 
 const Contact = () => {
   return (
@@ -51,7 +52,7 @@ const Contact = () => {
     </motion.div>
   
   <motion.div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"> 
-    {/* <EarthCanvas/> */}
+    <EarthCanvas/>
   </motion.div>
   </div>
   )
