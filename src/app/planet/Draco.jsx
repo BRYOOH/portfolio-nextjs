@@ -1,10 +1,11 @@
+
 import { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
-import planet from './draco.glb'
+import draco from './draco.glb'
 
 export default function Draco(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/draco.gltf')
+  const { nodes, materials, animations } = useGLTF({draco})
   const { actions } = useAnimations(animations, group)
   return (
     <group ref={group} {...props} dispose={null}>
@@ -38,4 +39,4 @@ export default function Draco(props) {
   )
 }
 
-useGLTF.preload('/draco.gltf')
+useGLTF.preload({draco})
