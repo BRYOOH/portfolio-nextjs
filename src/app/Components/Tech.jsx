@@ -1,6 +1,6 @@
 "use client";
 import { technologies } from "../experience/works";
-import BallCanvas from "../Components/BallCanvas"
+import BallCanvas from "../ui/BallCanvas"
 
 const Tech = () => {
   return (
