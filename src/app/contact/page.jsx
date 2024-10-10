@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser'
 import { useRef } from "react";
 import { GlobeDemo } from "../ui/GlobeDemo";
-// import EarthCanvas from "../Components/EarthCanvas";
 
 const textVariant ={
   hidden : {
@@ -22,6 +21,7 @@ const textVariant ={
 };
 
 const Contact = () => {
+
   const form = useRef();
  
   const sendEmail = (e) => {
@@ -43,7 +43,7 @@ const Contact = () => {
     }
 
   return (
-  <div className="flex xl:flex-row flex-col-reverse overflow-hidden sm:gap-3 gap-10 bg-gray-950">
+<div className="flex xl:flex-row flex-col-reverse overflow-hidden sm:gap-3 gap-10 bg-gray-950">
     
     <motion.div className="flex-[0.75] bg-black-100 p-4 rounded-lg ">
    <motion.div variants={textVariant} initial="hidden" animate="show" >

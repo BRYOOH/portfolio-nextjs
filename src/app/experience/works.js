@@ -17,6 +17,29 @@ import reactjs from '@/app/assets/reactjs.png'
 import mongodb from '@/app/assets/mongodb.png'
 import mysql from '@/app/assets/mysql.png'
 import tailwindcss from '@/app/assets/tailwind.png'
+import Ecommerce from '../assets/ecommerce.png'
+import PingPong from '../assets/pong.png'
+
+
+
+
+export const projects=[
+    {
+title:'Ecommerce Website',
+description:"This is a react application for buyying and selling of goods.With a login and signup authentification for security purposes",
+image:Ecommerce,
+link:"",
+iconList:[""]
+},
+{
+    title:'Java Ping-pong Game',
+    description:"This is a java 2d game where the user can play ping pong with the PC",
+    image:PingPong,
+    link:"",
+    iconList:[""]
+    },
+
+]
 
 export const technologies = [
     {
