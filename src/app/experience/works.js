@@ -29,14 +29,14 @@ title:'Ecommerce Website',
 description:"This is a react application for buyying and selling of goods.With a login and signup authentification for security purposes",
 image:Ecommerce,
 link:"",
-iconList:[""]
+iconList:[reactjs,mongodb,git]
 },
 {
     title:'Java Ping-pong Game',
     description:"This is a java 2d game where the user can play ping pong with the PC",
     image:PingPong,
     link:"",
-    iconList:[""]
+    iconList:[javas]
     },
 
 ]

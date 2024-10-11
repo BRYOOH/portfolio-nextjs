@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/experience/page.jsx", "src/app/skills/page.jsx", "src/app/ui/EarthCanvas.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/experience/page.jsx", "src/app/skills/page.jsx", "src/app/ui/EarthCanvas.jsx", "src/app/ui/SectionWrapper.jsx"],
   "exclude": ["node_modules"]
 }

@@ -3,6 +3,9 @@ import { motion } from "framer-motion"
 import { projects } from "../experience/works";
 import { PinContainer } from "../ui/3d-pin";
 import Image from "next/image";
+import { FaLocationArrow } from "react-icons/fa";
+import bg from '../assets/bg.jpeg'
+import {SectionWrapper} from "../ui/sectionwarpper";
 
 const Projects = () => {
   return (
@@ -18,7 +21,7 @@ const Projects = () => {
         className=" sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]" 
         key={index}>
           <PinContainer 
-          title={project.title} 
+          title={project.link} 
           href={project.link}>
             <div 
             className="flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh]  mb-10">
@@ -33,6 +36,26 @@ const Projects = () => {
             <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
             {project.description}
             </p>
+
+            <div className="flex items-center justify-between mt-7 mb-3">
+              <div className="flex items-center">
+                {project.iconList.map((icon,index)=>(
+                  <div key={index}
+                  className="border border-white/[0.2] rounded-[50px]  bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                  style={{
+                    transform:`translateX(-${5*index*2}px)`}}
+                  >
+                    < Image src={icon} alt="" className="p-2 object-cover" />
+                  </div>
+                ))}
+              </div>
+              <div className="flex justify-center items-center">
+                <p className="flex lg:text-xl md:text-xs text-sm text-purple-400">
+                Check Live Site
+                </p>
+                <FaLocationArrow className="ms-3" color="#CBACF9"/>
+              </div>
+            </div>
             
           </PinContainer>
         </div>
@@ -44,4 +67,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;
