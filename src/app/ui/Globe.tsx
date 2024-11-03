@@ -17,6 +17,23 @@ const RING_PROPAGATION_SPEED = 3;
 const aspect = 1.2;
 const cameraZ = 300;
 
+interface Arc {
+  color: string;
+  order: number;
+  startLat: number;
+  startLng: number;
+  endLat: number;
+  endLng: number;
+}
+
+interface Point {
+  size: number;
+  order: number;
+  color: (t: number) => string;
+  lat: number;
+  lng: number;
+}
+
 type Position = {
   order: number;
   startLat: number;
@@ -114,8 +131,8 @@ export function Globe({ globeConfig, data }: WorldProps) {
   };
 
   const _buildData = () => {
-    const arcs = data;
-    let points = [];
+    const arcs: Arc[] = data;
+    let points: Point[] = [];
     for (let i = 0; i < arcs.length; i++) {
       const arc = arcs[i];
       const rgb = hexToRgb(arc.color) as { r: number; g: number; b: number };
@@ -125,7 +142,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
         color: (t: number) => `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${1 - t})`,
         lat: arc.startLat,
         lng: arc.startLng,
-      });
+    });
       points.push({
         size: defaultProps.pointSize,
         order: arc.order,
@@ -295,7 +312,7 @@ export function hexToRgb(hex: string) {
 }
 
 export function genRandomNumbers(min: number, max: number, count: number) {
-  const arr = [];
+  const arr: number[] = [];
   while (arr.length < count) {
     const r = Math.floor(Math.random() * (max - min)) + min;
     if (arr.indexOf(r) === -1) arr.push(r);

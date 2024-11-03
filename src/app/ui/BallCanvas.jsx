@@ -1,7 +1,7 @@
 "use client";
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import { Suspense, useRef } from 'react'
+import { Suspense } from 'react'
 import CanvasLoader from './CanvasLoader'
 
 

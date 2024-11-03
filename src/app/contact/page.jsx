@@ -33,7 +33,7 @@ const Contact = () => {
       })
       .then(
         (result) => {
-          console.log('SUCCESS!');
+          console.log('SUCCESS!',result);
           alert("Successiful sent")
         },
         (error) => {

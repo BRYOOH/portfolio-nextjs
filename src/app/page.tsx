@@ -3,7 +3,6 @@ import Social from "./Components/Social";
 import Stats from "./Components/Stats";
 import { Button } from "./ui/button";
 import {FiDownload} from 'react-icons/fi'
-import {SectionWrapper }from "./ui/sectionwrapper"
 
  function Home() {
   return (

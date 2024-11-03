@@ -1,4 +1,4 @@
-import { animate, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 const stairsAnimation ={
     intial: {
@@ -12,7 +12,7 @@ const stairsAnimation ={
     },
 };
 
-const reverseIndex=(index:any)=>{
+const reverseIndex=(index)=>{
     const totalSteps =6;
     return totalSteps - index - 1;
 };
