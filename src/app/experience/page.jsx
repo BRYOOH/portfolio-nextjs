@@ -5,6 +5,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import {works} from './works'
 import Image from 'next/image';
 
+
 const textVariant ={
   hidden : {
     y: -50,
@@ -55,6 +56,7 @@ const ExperienceCard =({work},index)=>(
 const Experience = () => {
   return (
    <>
+   
    <div className=' bg-gray-950 '>
    <motion.div variants={textVariant} initial="hidden" animate="show" >
     <p className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>

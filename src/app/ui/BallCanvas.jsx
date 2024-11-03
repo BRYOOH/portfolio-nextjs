@@ -1,17 +1,14 @@
 "use client";
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei'
-import { Canvas, useLoader } from '@react-three/fiber'
+import { Canvas } from '@react-three/fiber'
 import { Suspense, useRef } from 'react'
 import CanvasLoader from './CanvasLoader'
 
 
 
-
-
 const Ball=({imgUrl})=>{
     
-    // const [decal]= useTexture([imgUrl]);
-    //  const [decal] = useLoader(TextureLoader,[imgUrl])
+    const decal= useTexture(imgUrl.src);
    
     return(
         <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -29,8 +26,9 @@ const Ball=({imgUrl})=>{
             <Decal
             position={[0,0,1]}
             rotation={[2*Math.PI, 0, 6.25]}
-            //  map={decal}
+            map={decal}
             />
+               
             </mesh>
         </Float>
     )

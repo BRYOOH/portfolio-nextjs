@@ -16,5 +16,8 @@
         @apply text-[24px] xl:text-[28px] leading-[1.1] font-semibold;
     }
     /*set the body height*/
-    html,body{height: 100%;};
+    html,body{
+        height: 100%;
+        font-family: var(--font-jetbrainsMono);
+    };
 }

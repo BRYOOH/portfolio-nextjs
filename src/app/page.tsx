@@ -3,8 +3,9 @@ import Social from "./Components/Social";
 import Stats from "./Components/Stats";
 import { Button } from "./ui/button";
 import {FiDownload} from 'react-icons/fi'
+import {SectionWrapper }from "./ui/sectionwrapper"
 
-export default function Home() {
+ function Home() {
   return (
     <section className="h-full bg-gray-950">
       <div className="container h-full mx-auto">
@@ -44,3 +45,4 @@ export default function Home() {
     </section>
   );
 }
+export default Home;

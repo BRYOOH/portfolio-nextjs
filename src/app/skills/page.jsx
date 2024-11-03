@@ -74,6 +74,7 @@ const Skills = () => {
    </div>
 
    <Tech/>
+  
 
    </div>
    
