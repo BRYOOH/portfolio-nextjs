@@ -14,7 +14,7 @@ import {FiDownload} from 'react-icons/fi'
         <div className="text-center xl:text-left order-2 xl:order-none">
           <span className="text-xl">Fullstack Developer</span>
           <h1 className="h1">
-            Hello I'm <br/> <span className="text-accent">Brian Muriuki </span>
+            Hello I&apos;m<br/> <span className="text-accent">Brian Muriuki </span>
           </h1>
           <p className="max-w-[500px] mb-9 text-white/80">
            Results-driven Full Stack Engineer with experience in multiple languages.
