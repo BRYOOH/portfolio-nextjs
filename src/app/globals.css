@@ -18,6 +18,5 @@
     /*set the body height*/
     html,body{
         height: 100%;
-        font-family: var(--font-jetbrainsMono);
     };
 }
