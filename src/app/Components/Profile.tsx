@@ -20,7 +20,7 @@ const Profile = () => {
             ease:"easeInOut"
           },}} 
         className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] rounded-[10px] mix-blend-lighten absolute">
-            <Image src={pic} priority quality={100} fill alt="" className="object-contain "/>
+            <Image src={pic} priority quality={100} alt="" className="object-contain "/>
         </motion.div>
 
         <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
