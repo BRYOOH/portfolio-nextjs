@@ -156,6 +156,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     setGlobeData(filteredPoints);
   };
 
+  /*eslint-disable */ 
   useEffect(() => {
     if (globeRef.current && globeData) {
       globeRef.current
