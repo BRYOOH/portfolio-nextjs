@@ -19,6 +19,7 @@ import mysql from '@/app/assets/mysql.png'
 import tailwindcss from '@/app/assets/tailwind.png'
 import Ecommerce from '../assets/ecommerce.png'
 import PingPong from '../assets/pong.png'
+import Fitness from '../assets/Fitnesstrack.png'
 
 
 
@@ -28,9 +29,16 @@ export const projects=[
 title:'Ecommerce Website',
 description:"This is a react application for buyying and selling of goods.With a login and signup authentification for security purposes",
 image:Ecommerce,
-link:"",
+link:"https://ecommerce-muchira.netlify.app/",
 iconList:[reactjs,mongodb,git]
 },
+{
+    title:'Fitness track app',
+    description:"This is a simple fitness app, that takes a workout as an input and returns daily caloriesBurnt and records workouts.",
+    image:Fitness,
+    link:"https://fitness-track-liard.vercel.app/",
+    iconList:[javas]
+    },
 {
     title:'Java Ping-pong Game',
     description:"This is a java 2d game where the user can play ping pong with the PC",

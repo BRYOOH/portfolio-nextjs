@@ -14,7 +14,14 @@ const Projects = () => {
       <h2 className="text-accent font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] uppercase">MY PROJECTS</h2>
     </motion.div>
 
-    <motion.div className="h-full flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8  mt-2">
+    <motion.div 
+    initial={{opacity:0}}
+    animate={{
+      opacity:1,
+      transition:{
+        delay:2.6,duration:0.4,ease:"easeIn"
+      }}}
+    className="h-full flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8  mt-2">
       {projects.map((project, index) => (
         <div
           className=" sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
