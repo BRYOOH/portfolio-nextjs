@@ -17,7 +17,7 @@ import reactjs from '@/app/assets/reactjs.png'
 import mongodb from '@/app/assets/mongodb.png'
 import mysql from '@/app/assets/mysql.png'
 import tailwindcss from '@/app/assets/tailwind.png'
-import Ecommerce from '../assets/ecommerce.png'
+import Ecommerce from '../assets/ecommerc.png'
 import PingPong from '../assets/pong.png'
 import Fitness from '../assets/Fitnesstrack.png'
 
@@ -27,9 +27,9 @@ import Fitness from '../assets/Fitnesstrack.png'
 export const projects=[
     {
 title:'Ecommerce Website',
-description:"This is a react application for buyying and selling of goods.With a login and signup authentification for security purposes",
+description:"This is a react application for buying and selling of goods.With a login and signup authentification for security purposes",
 image:Ecommerce,
-link:"https://ecommerce-muchira.netlify.app/",
+link:"https://quick-shop-lime.vercel.app/",
 iconList:[reactjs,mongodb,git]
 },
 {
