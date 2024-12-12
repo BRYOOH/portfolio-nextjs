@@ -20,11 +20,18 @@ import tailwindcss from '@/app/assets/tailwind.png'
 import Ecommerce from '../assets/ecommerc.png'
 import PingPong from '../assets/pong.png'
 import Fitness from '../assets/Fitnesstrack.png'
-
+import layers from '../assets/layers.png'
 
 
 
 export const projects=[
+    {
+        title:'Layers Landing page',
+        description:"This is a next js application, illustrating the services offered by layers a react application company",
+        image:layers,
+        link:"https://layers-puce.vercel.app/",
+        iconList:[nextjs,tailwindcss]
+    },
     {
 title:'Ecommerce Website',
 description:"This is a react application for buying and selling of goods.With a login and signup authentification for security purposes",
