@@ -66,11 +66,12 @@ const Experience = () => {
    </motion.div>
 
    <motion.div initial={{opacity:0}} 
-   animate={{ opacity:1, 
+   animate={{ opacity:1,
     transition:{
       delay:1.6,
       duration:2.4,
-      ease:"easeIn"}}}
+      ease:"easeIn"
+    }}}
    className="mt-20 flex flex-col">
     <VerticalTimeline>
       {works.map((work,index)=>(
