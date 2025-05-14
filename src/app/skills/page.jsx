@@ -59,7 +59,7 @@ const SkillsCard=({title,icon,index})=>(
 const Skills = () => {
   return (
    <>
-   <div className="h-full w-full bg-gray-950"> 
+   <div className="h-full w-full bg-gray-950 p-4"> 
     <motion.div variants={textVariant} initial="hidden" animate="show">
     <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
       Technology and skills obtained</p>
@@ -68,7 +68,6 @@ const Skills = () => {
 
    <div className="mt-20 flex flex-wrap items-center justify-center gap-10 mb-28" >
     {cards.map((card,index)=>(
-  
       <SkillsCard key={card.title} index={index} {...card}/>
     ))}
    </div>

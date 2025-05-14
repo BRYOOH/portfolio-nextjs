@@ -108,6 +108,7 @@ const config: Config = {
   		sm: 'calc(var(--radius) - 4px)'
   	}
   },
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     plugins: [nextui(),require("tailwindcss-animate")]
 }
 

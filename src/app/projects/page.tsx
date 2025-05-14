@@ -35,16 +35,16 @@ const Projects = () => {
       transition:{
         delay:2.6,duration:0.4,ease:"easeInOut"
       }}}
-    className="h-full flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8  mt-2">
+    className="h-full items-center grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center p-4 gap-10  mt-2">
       {projects.map((project, index) => (
         <div
-          className=" sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+          className=" h-[28rem] flex items-center justify-center w-full "
           key={index}>
           <PinContainer
             title={project.link}
             href={project.link}>
             <div
-              className="flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh]  mb-10">
+              className="flex items-center justify-center w-[40vh] md:w-[30vh] xl:w-[28vw] overflow-hidden h-[30vh]  mb-4">
               <Image
                 src={project.image}
                 alt={project.title}

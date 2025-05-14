@@ -57,7 +57,7 @@ const Experience = () => {
   return (
    <>
    
-   <div className=' bg-gray-950 '>
+   <div className=' bg-gray-950 p-2'>
    <motion.div variants={textVariant} initial="hidden" animate="show" >
     <p className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>
     Where I have worked before

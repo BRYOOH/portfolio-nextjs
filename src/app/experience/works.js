@@ -36,7 +36,7 @@ export const projects=[
 title:'Ecommerce Website',
 description:"This is a react application for buying and selling of goods.With a login and signup authentification for security purposes",
 image:Ecommerce,
-link:"https://quick-shop-lime.vercel.app/",
+link:"https://shoe-shop-zeta.vercel.app/",
 iconList:[reactjs,mongodb,git]
 },
 {

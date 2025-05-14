@@ -5,7 +5,7 @@ import { Button } from "@nextui-org/button"
 
 const Header = () => {
   return (
-   <header className="py-8 text-white" > 
+   <header className="py-8 px-4 text-white" > 
     <div className="container mx-auto flex justify-between items-center">
         <Link href='/'>
         <h1 className="text-4xl font-semibold">
