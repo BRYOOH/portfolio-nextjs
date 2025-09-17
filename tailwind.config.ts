@@ -28,7 +28,7 @@ const config: Config = {
 			primary: "#1c1c22",
 			tertiary: "#151030",
 			accent:{
-			  DEFAULT: "#21bb11",
+			  DEFAULT: "#11bb1c",
 			  hover: "#38e187",
 			},
   			background: 'hsl(var(--background))',
